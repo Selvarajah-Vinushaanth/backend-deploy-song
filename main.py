@@ -7,6 +7,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 import uvicorn
 import time
+import os
 from datetime import datetime
 
 # Import model modules
