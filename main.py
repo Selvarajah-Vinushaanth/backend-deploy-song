@@ -381,5 +381,8 @@ async def generate_lyrics_v1(request: LyricsRequest, user_id: str = Depends(vali
 async def root():
     return {"message": "Welcome to the Song Analysis API"}
 
+
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=5000, reload=True)
+    # Get the port from Render automatically
+    port = int(os.environ.get("PORT", 8000))  # 8000 is fallback for local testing
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)
