@@ -21,7 +21,7 @@ try:
     app = firebase_admin.get_app()
 except ValueError:
     # If not, initialize it
-    cred = credentials.Certificate("../song-writing-assistant-4cd39-firebase-adminsdk-fbsvc-8ddefda8ac.json")
+    cred = credentials.Certificate("./song-writing-assistant-4cd39-firebase-adminsdk-fbsvc-8ddefda8ac.json")
     app = firebase_admin.initialize_app(cred)
 
 # Get Firestore client
