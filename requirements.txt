@@ -10,3 +10,4 @@ sentencepiece
 safetensors
 einops
 protobuf
+firebase-admin
