@@ -11,3 +11,4 @@ safetensors
 einops
 protobuf
 firebase-admin
+waitress
