@@ -384,6 +384,7 @@ async def root():
 
 
 if __name__ == "__main__":
-    # Get the port from Render automatically
-    port = int(os.environ.get("PORT", 8000))  # 8000 is fallback for local testing
-    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)
+    # app.run(debug=True, port=5000)
+    # # if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=5000)
